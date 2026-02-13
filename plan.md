@@ -2,7 +2,7 @@
 > **A Hackathon Approach to Biodiversity Early Warning Systems**
 
 ## 🚦 Project Overview
-**EcoSentinel** avoids the computational bottleneck of processing raw DNA sequences (FASTQ/QIIME). Instead, we hypothesize that **metadata signals** from the [Metalog](https://metalog.biom.gurdon.cam.ac.uk/) database—such as sampling density, geographic fragmentation, and temporal continuity—act as strong proxy indicators for species stress.
+**EcoSentinel** avoids the computational bottleneck of processing raw DNA sequences (FASTQ/QIIME). Instead, we hypothesize that **metadata signals** from the [Metalog](https://metalog.embl.de/) database—such as sampling density, geographic fragmentation, and temporal continuity—act as strong proxy indicators for species stress.
 
 We combine these metadata features with **IUCN Red List** conservation statuses to build a **Random Forest** predictive model that flags species at risk of extinction.
 
