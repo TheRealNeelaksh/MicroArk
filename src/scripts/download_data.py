@@ -3,8 +3,12 @@ import pandas as pd
 import gzip
 import io
 
+from pathlib import Path
+
 url = "https://metalog.embl.de/static/download/metadata/animal_extended_wide_latest.tsv.gz"
-output_path = "data/metalog_raw.csv"
+# Define project root relative to this script: src/scripts/ -> root
+project_root = Path(__file__).resolve().parents[2]
+output_path = project_root / "data" / "metalog_raw.csv"
 
 print(f"Downloading from {url}...")
 try:

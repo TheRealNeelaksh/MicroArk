@@ -3,12 +3,12 @@ import shutil
 import sys
 
 def setup():
-    base_dir = Path(__file__).parent
-    src_file = base_dir / 'src' / 'data' / 'animal_sample_list.csv'
-    dest_dir = base_dir / 'data'
+    project_root = Path(__file__).resolve().parents[2]
+    src_file = project_root / 'src' / 'data' / 'animal_sample_list.csv'
+    dest_dir = project_root / 'data'
     dest_file = dest_dir / 'metalog_raw.csv'
 
-    print(f"Base directory: {base_dir}")
+    print(f"Project root: {project_root}")
     print(f"Checking existing source: {src_file}")
 
     if not src_file.exists():

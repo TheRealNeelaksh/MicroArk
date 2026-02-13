@@ -1,9 +1,12 @@
 import pandas as pd
 import os
 
+from pathlib import Path
+
 def process_data():
-    input_file = "data/metalog_raw.csv"
-    output_file = "data/species_features.csv"
+    project_root = Path(__file__).resolve().parents[2]
+    input_file = project_root / "data" / "metalog_raw.csv"
+    output_file = project_root / "data" / "species_features.csv"
 
     if not os.path.exists(input_file):
         print(f"Error: {input_file} not found.")
